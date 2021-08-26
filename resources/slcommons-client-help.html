@@ -1,0 +1,41 @@
+<p>A node to access [[sl-commons-help-product]]'s functionalities.</p>
+
+<p>
+    This node lets you control and monitor the functionalities of [[sl-commons-help-product]]
+    by reading/writing the sysfs files provided by its
+    <a href="[[sl-commons-help-github-kernel]]">Kernel module</a>.
+</p>
+
+<h3>Inputs</h3>
+    <dl class="message-properties">
+        <dt>payload <span class="property-type">string | number</span></dt>
+        <dd>the value to write or empty to only trigger a read.</dd>
+    </dl>
+
+ <h3>Outputs</h3>
+     <dl class="message-properties">
+        <p>(Readable fetures only)</p>
+        <dt>payload <span class="property-type">string</span></dt>
+        <dd>the value read.</dd>
+     </dl>
+
+<h3>Details</h3>
+    <p>
+        In the configuration, select the functionality (sysfs file) to link this node to.
+        Functionalities can be readable (R) and/or writable (W).<br />
+        Use <code>msg.payload</code> as the value to write to or read from the file.
+    </p>
+    <p>
+        For details on the values' formats refer to the
+        <a href="[[sl-commons-help-github-kernel]]#readme">Kernel module documentation</a>.
+    </p>
+
+<h3>References</h3>
+    <ul>
+        <li>
+          <a href="[[sl-commons-help-github-nodered]]">Node GitHub repository</a>
+        </li>
+        <li>
+          <a href="[[sl-commons-help-github-kernel]]">Kernel module GitHub repository</a>
+         </li>
+    </ul>

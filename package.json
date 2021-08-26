@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-sfera-labs-commons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Common utilities for Sfera Labs Node-RED nodes",
   "repository": {
     "type": "git",
